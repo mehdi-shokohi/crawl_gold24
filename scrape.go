@@ -44,6 +44,8 @@ func main(){
 
 	FHandler:=new(WebServerHandler)
 	FHandler.pchan=priceChan
+	fmt.Println("Server Is Running On Port 8181")
+
 	er:=fasthttp.ListenAndServe(":8181", FHandler.RequestHandler)
 	if er!=nil{
 		log.Fatal("Error in Starting Server ")
