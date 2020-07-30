@@ -6,5 +6,9 @@ Server response will return Current Price Of Gold 24 In Iran ,  this data Will b
 
 #### Run Server
 ```shell script
-go run scrape.go
+# go run *.go
+```
+
+```shell script
+# curl localhost:8181
 ```
